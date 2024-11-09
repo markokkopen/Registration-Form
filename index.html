@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+	<title style="background-color:DodgerBlue;">Registration Form</title></head>
+    <style>
+body {
+  background-image: url("DanielTseng,unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+}
+</style>
+       <center> 
+        <h3><font size="12" color="green">Special United Academy Registration Form</font></h3>
+        <form method="post" action="home.html">
+        <table border="1">  
+            <tr>
+               <th>Candidate id:</th> 
+               <td><input type=text id="EMPID" name="txtId"></td>
+            </tr>
+            <tr>
+                <th>Candidate Name:</th>
+                <td><input type=text id="EMPNAME" name="txtNAME"></td>
+            </tr>
+            <tr>
+                <th>Codename:</th>
+                <td><input type=password maxlength="10" id="EMPPASS" name="txtpass"></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><textarea rows="5" cols="20" id="EMPADD" name="txtadd"></textarea></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    Male:<input type="radio" name="rd1" value="MALE" checked>
+                    Female:<input type="radio" value="FEMALE" name="rd1">
+                </td>
+            </tr>
+            <tr>
+                <th>City:</th>
+                <td>
+                    <select name="txtCity" id="EMPCITY">
+                       <option>Hawaii</option> 
+                       <option>Chile</option> 
+                       <option>Bahamas</option> 
+                       <option selected>Chile</option> 
+                       <option>Greenland</option> 
+                       <option>Disneyland</option> 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Qualification:</th>
+                <td>
+                    Diploma<input type="checkbox"  name="chk1" value="Diploma" checked>
+                    MA<input type="checkbox" name="chk2" value="Master">
+                </td>
+            </tr>
+            <tr>
+                <th>Bitrh Origin:</th>
+                <td><input type="date" name="txtDOB" ID="EMPDOB"></td>
+            </tr>
+            <tr>
+                <th>Time:</th>
+                <td><input type="time" name="txttime" ID="EMPTIME"></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><input type="email" name="txtemail" ID="EMPMAIL"></td>
+            </tr>
+            <tr>
+                <th>Upload:</th>
+                <td><input type="file" name="txtfile" ID="EMPFILE"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type=submit value="ALL RIGHT!">
+                    <input type=reset value="Reset">
+
+                </td>
+            </tr>
+        </form>
+    </table>
+       </center> 
+    </body>
+</html>
